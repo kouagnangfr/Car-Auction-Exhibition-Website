@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Burned&display=swap');
+
+
+
+.header 
+{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-size: 1em;
+}
+
+.header a
+{
+    text-decoration: none;
+}
+    
+
+.icon
+{
+    
+    height: 2em;
+}
+
+.mainContainer
+{
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+}
+
+.container
+{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navBar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+    
+}
+
+.navbarList
+{
+    display: flex;
+    column-gap: 3em;
+    list-style: none;
+}
+
+.navbarList a
+{
+    color: var(--black-color);
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    font-weight: 900;
+
+}
+
+.navbarList a:hover 
+{
+    color: var(--second-color);
+    transition: transform 1s ease-in-out;
+    border-bottom: 3px solid var(--second-color);
+}
+
+.navbarList .active
+{
+    color: var(--second-color);
+    border-bottom: 3px solid var(--second-color);
+    transition: transform 10s ease-in-out;
+}
+
+.utility .active
+{
+    color: var(--second-color);
+}
+
+.menuIcon
+{
+    display: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--second-color);
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif, cursive;
+}
+
+.logo
+{
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Rubik Burned', system-ui;
+    color: black;
+}
+
+.logo span
+{
+    color: var(--second-color);
+}
+
+.searchIcon
+{
+    
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--black-color);
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif, cursive;
+}
+
+.searchIcon:hover
+{
+    color: var(--second-color);
+}
+
+.searchBox
+{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: var(--white-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55 /10%);
+    border: 1px solid var(--second-color);
+    border-radius: 0.5em;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.4em;
+}
+
+.searchBox input
+{
+    width: 100%;
+    padding: 1.5em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.utility
+{
+    display: flex;
+    gap: 1.5em;
+}
+
+
+
+
+@media screen and (max-width: 1150px) 
+{
+    /* Styles à appliquer */
+    .navbarList
+   {
+    display: none;
+   }
+
+   .menuIcon
+   {
+    display: block;
+   }
+}

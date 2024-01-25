@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Burned&display=swap');
+
+
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white ;
+    padding: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer div
+{
+    text-align: left;
+    padding: 0.5em;
+}
+
+.footer h4
+{
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    font-family: cursive;
+}
+
+.footer h3
+{
+    font-size: 2.5em;
+    font-weight: 900;
+    font-family: 'Rubik Burned', system-ui;
+    margin-bottom: 1em;
+}
+
+.follow
+{
+    font-family: cursive;
+    font-weight: 900;
+}
+
+.footer h3 span
+{
+    color:var(--second-color);
+}
+
+.footer p
+{
+    color: gray;
+    font-weight: 600;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.footer a:hover
+{
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.footer img
+{
+    width: 1.5rem;
+    height: auto;
+    margin-right: 1em;
+   cursor: pointer;
+}
+
+.copyR
+{
+    color: var(--main-color);
+    border-top: 1px solid var(--nardo-gray-color);
+    font-size: 0.9em;
+    font-family: cursive;
+    font-weight: 900;
+    margin-top: 2em;
+}
+
+.line
+{
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.footer mark
+{
+    color: inherit;
+    background-color: transparent;
+    font-family: 'Rubik Burned', system-ui;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.footer mark span
+{
+    color: var(--second-color);
+}
+
+.noms
+{
+    color: inherit;
+    background-color: transparent;
+    font-family: cursive;
+    font-size: 1.3em
+}
+
+@media screen and (max-width: 1150px)
+{
+    .mainDiv
+    {
+        flex-direction: column;
+    }
+}
