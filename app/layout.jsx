@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import HomeSection1 from "@/components/HomeSection1";
 
 import styles from './layout.module.css'
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className + ' ' + styles.body}>
         <Header/>
         <main className={styles.main}>
+        <HomeSection1></HomeSection1>
         {children}
         </main>
         <Footer/>

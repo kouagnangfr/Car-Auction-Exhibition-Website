@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+
+.homeSection1
+{
+   min-width: 100%;
+   min-height: 100vh;
+}
+
+.divPrincipale 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+    min-height: 60vh;
+    position: relative;
+    border-bottom: 5px solid var(--second-color);
+    border-radius: 20px;
+}
+
+.divPrincipale::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/home/car3.jpg');
+    background-size: cover;
+    z-index: -1; 
+}
+
+.contenu 
+{
+    position: relative; 
+    z-index: 1
+}
+
+.date
+{
+    font-size: 0.9em;
+    font-weight: 600;
+    font-family: cursive;
+    padding-top: 4em;
+}
+
+.titrePrincipale
+{
+    color: whitesmoke;
+    font-size: 5em;
+    font-weight: 900;
+    font-family: 'Rubik Burned', system-ui;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    text-transform: uppercase;
+}
+
+.menubutton
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10em;
+    padding: 1em;
+}    
+
+.menubutton .homeButton
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    font-weight: 900;
+    font-family: cursive;
+    background-color: var(--second-color);
+}
+
+
+.homeButton:hover
+{
+    background-color: gray;
+    transition: ease-in-out 0.7s;
+}
+
+.decompte
+{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    color: white;
+    font-size: 3.5em;
+    font-weight: 900;
+    font-family: cursive;
+    font-family: 'Rubik Burned', system-ui;
+}
+
+.decompte span p
+{
+    font-size: 0.3em;
+    color: gray;
+}
+
+.divSecondaire
+{
+    text-align: center;
+    padding: 2em;
+    color: black
+}
+
+.divSecondaire p
+{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 3em 8em;
+    font-family: cursive;
+}
+
+.divSecondaire h2
+{
+    font-size: 2.5em;
+    font-weight: 900;
+    font-family: 'Rubik Burned', system-ui;
+    margin-bottom: 1em;
+
+}
+
+.divSecondaire h2 span
+{
+    color: var(--second-color);
+}
+
+
+@media screen and (max-width: 1150px)
+{
+    .divPrincipale::before 
+    {
+        background-position: center;
+    }
+}

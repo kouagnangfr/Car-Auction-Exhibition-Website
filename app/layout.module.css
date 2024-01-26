@@ -7,8 +7,6 @@
 
 .main
 {
-    border: solid 2px green;
-    min-height: 100vh;
     margin-top: 6.5em;
     flex: 1;
 }
