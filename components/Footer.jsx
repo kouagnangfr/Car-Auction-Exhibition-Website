@@ -1,5 +1,6 @@
-import styles from "./css/Footer.module.css"
+'use client'
 
+import styles from "./css/Footer.module.css"
 
 import Image from "next/image"
 import gmail from "@/public/reseaux socios/gmail.png"
@@ -12,7 +13,7 @@ import youtube from "@/public/reseaux socios/youtube.png"
 import interrogation from "@/public/reseaux socios/interrogation.png"
 import facebook from "@/public/reseaux socios/facebook.png"
 
-export default function Footer()
+export default function Footer({setPage})
 {
     return <footer className={styles.footer}>
         <div className="footer-container"> 
@@ -31,11 +32,11 @@ export default function Footer()
                     </div>
                     <div>
                         <h4>Pages</h4>
-                        <p><a href="#">Home</a></p>
-                        <p><a href="#">About</a></p>
-                        <p><a href="#">Cars</a></p>
-                        <p><a href="#">Pricing</a></p>
-                        <p><a href="#">Contact</a></p>
+                        <p><a href="#" onClick={() => setPage('Home')}>Home</a></p>
+                        <p><a href="#" onClick={() => setPage('About')}>About</a></p>
+                        <p><a href="#" onClick={() => setPage('Cars')}>Cars</a></p>
+                        <p><a href="#" onClick={() => setPage('Pricing')}>Pricing</a></p>
+                        <p><a href="#" onClick={() => setPage('Contact')}>Contact</a></p>
                     </div>
                 </div>
                 <div className="container d-flex justify-content-around">
@@ -50,11 +51,10 @@ export default function Footer()
                         <h4>Contacts US</h4>
                         <p><Image src={maps} alt="Logo maps" />Ottawa, Toronto, LasVegas</p>
                         <p><Image src={telephone} alt="Logo telephone" /> +1 (000) 000 0000</p>
-                        <p><a href="mailto:CarsAuctions@gmail.com"><Image src={gmail} alt="Logo Gmail" />CarsAuctions@gmail.com"</a></p>
+                        <p><a href="mailto:CarsAuctions@gmail.com"><Image src={gmail} alt="Logo Gmail" />CarsAuctions@gmail.com</a></p>
                         <p><a href="#"><Image src={interrogation} alt="interrogation" />Faq</a></p>
                     </div>  
-                </div>
-                
+                </div>                
             </div>
             <div className= {styles.copyR + " " + "container d-flex justify-content-center"}>
                 <div className="text-center row">

@@ -1,0 +1,199 @@
+.section
+{
+    min-height: 100vh;
+}
+
+.sectionPadding
+{
+    padding: 4em 0;
+}
+
+.contactSection
+{
+    height: 70vh;
+    background-color: var(--black-100);
+}
+
+.bigTitle
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'Rubik Burned', system-ui;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.bigTitle span
+{
+    color: var(--second-color);
+}
+
+.container
+{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cars .carsFilter
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.cars .carsFilter button
+{
+    text-transform: uppercase;
+    margin-top: -20px;
+    outline: none;
+    border: 1px solid;
+    border-color: var(--main-color);
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--nardo-gray-color);
+    margin-right: 20px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.cars .carsFilter button:last-child
+{
+    margin-right: 0;
+}
+
+.cars .carsFilter button:hover,
+.cars .carsFilter button.active 
+{
+    color: white;
+    background-color: var(--second-color);
+}
+
+.cars .carsItem
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cars .carsItem.hide 
+{
+    display: none;
+}
+
+.cars .carsItem.show
+{
+    display: block;
+    animation:  showItem 0.5s ease;
+}
+
+@keyframes showItem
+{
+    0%
+    {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.cars .carsItemInner
+{
+    width: 100%;
+    align-items: center;
+    height: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px gray;
+    cursor: pointer;
+    position: relative;
+}
+
+.cars .carsItemInner .carsImg img
+{
+    width: 100%;
+    height: 15em;
+    display: block;
+}
+
+.cars .carsItem .carsInfo
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.cars .carsItem:hover .carsInfo
+{
+    opacity: 1;
+}
+.cars .carsItem .carsInfo h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--second-color);
+    text-transform: capitalize;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.cars .carsItem:hover .carsInfo h4
+{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.cars .carsItem .carsInfo .icon
+{
+    height: 40px;
+    width: 40px;
+    color: var(--white);
+    background-color: var(--second-color);
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.cars .carsItem:hover .carsInfo .icon
+{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.cars .carsItem .carsInfo .icon .ico 
+{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 12px;
+}

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Burned&display=swap');
 
-
-
 .header 
 {
     display: block;
@@ -123,7 +121,7 @@
 
 .searchBox
 {
-    display: none;
+    display: block;
     position: absolute;
     top: 110%;
     right: 0;
@@ -153,9 +151,6 @@
     display: flex;
     gap: 1.5em;
 }
-
-
-
 
 @media screen and (max-width: 1150px) 
 {

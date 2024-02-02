@@ -105,6 +105,11 @@
     color: gray;
 }
 
+.decompte .secondes
+{
+    color: var(--second-color);
+}
+
 .divSecondaire
 {
     text-align: center;
@@ -134,7 +139,6 @@
 {
     color: var(--second-color);
 }
-
 
 @media screen and (max-width: 1150px)
 {
