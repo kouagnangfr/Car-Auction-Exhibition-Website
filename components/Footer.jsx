@@ -23,7 +23,7 @@ export default function Footer({setPage})
                         <h3>Cars<span>Auctions</span></h3>
                         <span className={styles.follow}>Follow us on :</span>
                         <div>
-                            <Image src={pinterest} alt="Logo pinterest" />
+                            <Image src={pinterest} alt="Logo pinterest"/>
                             <Image src={instagram} alt="Logo instagram" />
                             <Image src={twitter} alt="Logo twitter" />
                             <Image src={youtube} alt="Logo youtube" />
