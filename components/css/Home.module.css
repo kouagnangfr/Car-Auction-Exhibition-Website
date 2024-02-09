@@ -1,0 +1,71 @@
+.divSecondaire
+{
+    text-align: center;
+    padding: 2em;
+    color: black
+}
+
+.divSecondaire p
+{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 3em 8em;
+    margin-top: 0em;
+    font-family: cursive;
+}
+
+.divSecondaire h2
+{
+    font-size: 2.5em;
+    font-weight: 900;
+    font-family: 'Rubik Burned', system-ui;
+    margin-bottom: 0.8em;
+
+}
+
+.divSecondaire h2 span
+{
+    color: var(--second-color);
+}
+
+/*Media Query*/
+@media (max-width:799px) 
+{
+    .divSecondaire p
+    {
+        font-size: 1em;
+        margin: 0em;
+    }
+
+    .divSecondaire h2
+    {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (max-width:999px) 
+{
+    .divSecondaire p
+    {
+        font-size: 1em;
+        margin: 0em;
+    }
+}
+
+@media (max-width:477px) 
+{
+    .divSecondaire p
+    {
+        font-size: 1em;
+        margin: 0em;
+        text-align: left;
+    }
+
+    .divSecondaire h2
+    {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+}

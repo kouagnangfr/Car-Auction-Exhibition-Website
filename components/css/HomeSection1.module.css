@@ -5,8 +5,9 @@
 
 .homeSection1
 {
-   min-width: 100%;
-   min-height: 100vh;
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
 }
 
 .divPrincipale 
@@ -80,7 +81,6 @@
     background-color: var(--second-color);
 }
 
-
 .homeButton:hover
 {
     background-color: gray;
@@ -97,12 +97,14 @@
     font-weight: 900;
     font-family: cursive;
     font-family: 'Rubik Burned', system-ui;
+    text-shadow: 2px 2px 4px whitesmoke;
 }
 
 .decompte span p
 {
-    font-size: 0.3em;
+    font-size: 0.4em;
     color: gray;
+    text-shadow: 0px 0px 0px black;
 }
 
 .decompte .secondes
@@ -110,40 +112,81 @@
     color: var(--second-color);
 }
 
-.divSecondaire
-{
-    text-align: center;
-    padding: 2em;
-    color: black
-}
-
-.divSecondaire p
-{
-    color: black;
-    font-size: 1.2em;
-    font-weight: 600;
-    margin: 3em 8em;
-    font-family: cursive;
-}
-
-.divSecondaire h2
-{
-    font-size: 2.5em;
-    font-weight: 900;
-    font-family: 'Rubik Burned', system-ui;
-    margin-bottom: 1em;
-
-}
-
-.divSecondaire h2 span
-{
-    color: var(--second-color);
-}
-
+/*Media query*/
 @media screen and (max-width: 1150px)
 {
     .divPrincipale::before 
     {
         background-position: center;
+        min-width: 100%;
+    }
+}
+
+@media (max-width:799px) 
+{
+    .date
+    {
+        font-size: 0.6em;
+        padding-top: 3em;
+    }
+
+    .titrePrincipale
+    {
+        font-size: 3em;
+        margin-bottom: 0.7em;
+        margin-top: 0.2em;
+    }
+
+    .decompte
+    {
+        gap: 0.5em;
+        font-size: 2em;
+        text-shadow: 2px 2px 4px whitesmoke;
+        background-color: black;
+    }
+
+    .menubutton
+    {
+        margin-top: 7em;
+        padding: 0.8em;
+        font-size: 0.7em;
+    }    
+}
+
+@media (max-width:477px) 
+{
+    .titrePrincipale
+    {
+        font-size: 1.7em;
+        margin-bottom: 0.7em;
+        margin-top: 0.2em;
+    }
+
+    .menubutton
+    {
+        margin-top: 6em;
+        padding: 0.8em;
+        font-size: 0.6em;
+    }    
+    
+    .homeSection1
+    {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:300px) 
+{
+    .titrePrincipale
+    {
+        font-size: 1.5em;
+        margin-bottom: 0.4em;
+        margin-top: 0.2em;
+    }
+
+    .decompte
+    {
+        gap: 0.4em;
+        font-size: 1.5em;
     }
 }

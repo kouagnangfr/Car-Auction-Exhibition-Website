@@ -13,8 +13,8 @@ Le projet vise à créer un site pour promouvoir une grande vente aux enchères 
 
 ## Couleurs du Site Web
 Nos couleurs sont inspirées du monde automobile pour refléter l'esthétique des voitures mythiques. Les couleurs principales incluent :
-- **Rouge Passion #FF0000**
-- **Argent Métallique #C0C0C0**
+- **Rouge Passion #D90429**
+- **Argent Métallique #FFF6F8**
 - **Noir Élégant #000000**
 - **Blanc Pur #FFFFFF**
 - **Gris Nardo #B7B7B7**
@@ -23,15 +23,12 @@ Nos couleurs sont inspirées du monde automobile pour refléter l'esthétique de
 Wireframes pour les interfaces graphiques du site :
 
 ### Page d'Accueil
-
 ![Wireframe Page d'Accueil]()
 
 ### Page de Détail de l'Enchère
-
 ![Wireframe Page de Détail de l'Enchère]()
 
 ### Page d'Inscription
-
 ![Wireframe Page d'Inscription]()
 
 

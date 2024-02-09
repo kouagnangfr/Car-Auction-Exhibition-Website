@@ -197,3 +197,42 @@
     text-align: center;
     margin-top: 12px;
 }
+
+@media screen and (max-width : 800px)
+{
+    .cars .carsItem
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 20px;
+    }
+
+    .row
+    {
+        margin: 0em 4em;
+    }
+}
+
+@media screen and (max-width : 450px)
+{
+    .cars .carsItem
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .row
+    {
+        margin: 0em 4em;
+    }
+}
+
+@media screen and (max-width : 560px)
+{
+
+    .row
+    {
+        margin: 0em;
+    }
+}

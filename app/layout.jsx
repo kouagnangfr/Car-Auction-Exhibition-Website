@@ -46,7 +46,7 @@ export default function RootLayout({ children })
               <Error404/>
           }
         </main>
-        <Footer/>
+        <Footer setPage={setPage}/>
       </body>
     </html>
 }

@@ -17,21 +17,23 @@
 
 .wrapper
 {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 1em;
-    margin: 3rem 10rem 10rem 10rem;
-    padding: 0px 2em;
-
+    display: flex;
+    justify-content: center;
+    grid-gap: 2em;
+    margin: 2em 1em 4em 1em;
+    align-items: center;
 }
 
 .pricingTable
 {
-   box-shadow: 0px 0px 18px black;
-   text-align: center;
-   padding: 2em 0em;
-   border-radius: 50px;
-   position: relative;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 18px black;
+    padding: 2em auto;
+    border-radius: 50px;
+    width: 15em;
  
 }
 
@@ -108,7 +110,6 @@
     display: inline-block;
 }
 
-
 .pricingTable .btn 
 {
 	color: #fff;
@@ -136,15 +137,25 @@
     transition: all 0.3 linear;
 }
 
-.pricingTable .btn.bordered {
+.pricingTable .btn:active
+{
+	box-shadow: 0px 0px 15px var(--second-color);
+    transition: all 0.3 linear;
+}
+
+.pricingTable .btn.bordered
+{
 	z-index: 50;
 	color:#333;
 }
-.pricingTable:hover .btn.bordered{
+
+.pricingTable:hover .btn.bordered
+{
 	color:#fff !important;
 }
 
-.pricingTable .btn.bordered:after {
+.pricingTable .btn.bordered:after
+{
 	background: #fff none repeat scroll 0 0;
 	border-radius: 50px;
 	content: "";
@@ -161,7 +172,9 @@
 	-moz-transform:scale(1);
 	transform:scale(1);
 }
-.pricingTable:hover .btn.bordered:after{
+
+.pricingTable:hover .btn.bordered:after
+{
 	opacity:0;
 	transform:scale(0);
 }
@@ -180,31 +193,30 @@
     color: var(--second-color);
 }
 
-@media screen and (max-width:1250px){
-   .wrapper{
-        grid-template-columns: repeat(2,1fr);
+/*Media Query*/
+@media screen and (max-width:750px)
+{ 
+    .wrapper
+    {
+        flex-direction: column;  
     } 
 }
 
-@media screen and (max-width:1050px){
-   .wrapper{
+@media screen and (max-width:477)
+{
+    .wrapper
+    {
         grid-template-columns: 1fr;
-    } 
-}
-
-@media screen and (max-width:550){
-    .wrapper{
-        grid-template-columns: 1fr;
-        margin: 0em;
+        margin: 0rem;
         padding: 0px 0em;
-     } 
+        grid-gap: 0em;
+    } 
 
      .pricingTable
     {
-        min-width: 80%;
-    padding: 0em 0em;
-    border-radius: 50px;
-    position: relative;
-    
+        min-width: 100%;
+        padding: 0em 0em;
+        border-radius: 50px;
+        position: relative;
     }
  }

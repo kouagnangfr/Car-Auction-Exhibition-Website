@@ -1,0 +1,8 @@
+.aboutSection
+{
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 4em;
+    font-size: 4em;
+    font-weight: 900;
+}
