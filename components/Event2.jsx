@@ -12,7 +12,7 @@ export default function Home2 ({setPageHome})
             et modernes. Rejoignez-nous pour une expérience automobile unique. Réservez vos dates dès maintenant !""
         </p>
         <p className={styles.date}><span className={styles.date}>10 - 25 Septembre 2024 | Ottawa(ontario), Canada</span></p>  
-        <button onClick={() => setPageHome('Home1')}>PRECEDENTE</button>
+        <button onClick={() => setPageHome('Home1')}>Previous Event</button>
         </div>
     </div>
 }

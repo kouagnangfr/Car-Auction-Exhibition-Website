@@ -1,7 +1,9 @@
 'use client'
 
-import styles from '@/components/css/Header.module.css'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
+import styles from '@/components/css/Header.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -19,14 +21,6 @@ export default function Header({setPage})
         setHidden(!hidden);
     }
 
-    //Fonction permettant determiner la navigation active et de faire le routage
-    const [activePage, setActivePage] = useState('Home');
-    const changeurPage = (page) =>
-    {
-        setPage(page);
-        setActivePage(page);
-    }
-
     //Fonction pour afficher ou desactiver le menu Hamburger
     const [hambuger, setHambuger] = useState(false);
     const toggleHam = () =>
@@ -34,37 +28,34 @@ export default function Header({setPage})
         setHambuger(!hambuger);
     }
 
+    const pathname = usePathname();
+
     return <header className={styles.header}>
         <div className={styles.mainContainer}>
             <div className={styles.navBar + " " + styles.container}>
                 <a href="#" onClick={toggleHam}><FontAwesomeIcon icon="bars" className={styles.icon + " " + styles.menuIcon} /></a>
-                <a href="#" className={styles.logo} onClick={() => setPage('Home')}>Cars<span>Auctions</span></a>
+                <Link href="/" className={` ${styles.logo}`} >Cars<span>Auctions</span></Link>
                 {/*Nav-list */}
                 <ul className={`${styles.navbarList} ${hambuger ? styles.affichageNav : ''}`}>
                     <li>
-                        <a href="#" className={activePage === 'Home' ? styles.active : ''} onClick={() => changeurPage('Home')}>
-                            Home
-                        </a>
+                        <Link href="/page-Events/Event-1" className={pathname === '/page-Events/Event-1' || pathname === '/page-Events/Event-2' ? styles.active : ''}>
+                            Events
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className={activePage === 'About' ? styles.active : ''} onClick={() => changeurPage('About')}>
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" className={activePage === 'Cars' ? styles.active : ''} onClick={() => changeurPage('Cars')}>
+                        <Link href="/page-Cars" className={pathname === '/page-Cars' ? styles.active : ''}>
                             Cars
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className={activePage === 'Pricing' ? styles.active : ''} onClick={() => changeurPage('Pricing')}>
+                        <Link href="/page-Pricing" className={pathname === '/page-Pricing' ? styles.active : ''}>
                             Pricing
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className={activePage === 'Contact' ? styles.active : ''} onClick={() => changeurPage('Contact')}>
+                        <Link href="/page-Contact" className={pathname === '/page-Contact' ? styles.active : ''}>
                             Contact
-                        </a>
+                        </Link>
                     </li>
                     <a href="#" className={styles.closeNav} onClick={toggleHam}><FontAwesomeIcon icon="fa-solid fa-x" /></a>
                 </ul>

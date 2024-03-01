@@ -40,7 +40,7 @@ export default function Home1({setPageHome})
                     <span className={styles.secondes}><p>secondes</p>{decompte.seconds}</span>
                 </div>
                 <div className={styles.menubutton}>
-                    <a href="#" className={styles.homeButton} onClick={() => setPageHome('Home2')}>SUIVANTE</a>
+                    <a href="#" className={styles.homeButton} onClick={() => setPageHome('Home2')}>Next Event</a>
                 </div>
             </div>
         </section>

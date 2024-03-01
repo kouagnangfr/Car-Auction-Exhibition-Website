@@ -6,8 +6,8 @@ export default function Home ()
 {
   return <>
       <div className={styles.divSecondaire}>
-          <p>
           <h2>Presententat<span>ion</span></h2>
+          <p>
               Ne manquez pas l'evenements mondial où les légendes prennent vie, où chaque voiture est une œuvre d'art 
               et une  pièce d'histoire. Du 10 au 25 Septembre, nous vous invitons à explorer et à enchérir sur une collection 
               exclusive des voitures les plus emblématiques de tous les temps.
@@ -17,8 +17,8 @@ export default function Home ()
           </p>
       </div>
       <div className={styles.divSecondaire}>
+          <h2>Presententat<span>ion</span></h2>
           <p>
-          <h2>Abo<span>ut</span></h2>
               Ne manquez pas l'evenements mondial où les légendes prennent vie, où chaque voiture est une œuvre d'art 
               et une  pièce d'histoire. Du 10 au 25 Septembre, nous vous invitons à explorer et à enchérir sur une collection 
               exclusive des voitures les plus emblématiques de tous les temps.
@@ -28,8 +28,8 @@ export default function Home ()
           </p>
       </div>
       <div className={styles.divSecondaire}>
+          <h2>Presententat<span>ion</span></h2>
           <p>
-          <h2>Oth<span>er</span></h2>
               Ne manquez pas l'evenements mondial où les légendes prennent vie, où chaque voiture est une œuvre d'art 
               et une  pièce d'histoire. Du 10 au 25 Septembre, nous vous invitons à explorer et à enchérir sur une collection 
               exclusive des voitures les plus emblématiques de tous les temps.

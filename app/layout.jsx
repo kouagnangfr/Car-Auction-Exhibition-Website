@@ -2,15 +2,9 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Home from "@/components/Home";
-import Cars from "@/components/Cars";
-import Contact from "@/components/Contact";
-import About from "@/components/About";
-import Pricing from "@/components/Pricing";
-import Error404 from "@/components/Error404";
-import { useState } from 'react'
 
 import styles from './layout.module.css'
+
 
 import { Inter } from "next/font/google"
 import 'normalize.css/normalize.css'
@@ -25,28 +19,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) 
 {
-  const [page, setPage] = useState('Home');
   return  <html lang="en">
       <body className={inter.className + ' ' + styles.body}>
-        <Header setPage={setPage}/>
+        <Header/>
         <main className={styles.main}>
           {children}
-          { 
-            page === 'Home' ? 
-              <Home/>
-            : page === 'About' ?
-              <About/>
-            : page === 'Cars' ?
-              <Cars/>
-            : page === 'Contact' ?
-              <Contact/>
-            : page === 'Pricing' ?
-              <Pricing/>
-            :
-              <Error404/>
-          }
         </main>
-        <Footer setPage={setPage}/>
+        <Footer/>
       </body>
     </html>
 }

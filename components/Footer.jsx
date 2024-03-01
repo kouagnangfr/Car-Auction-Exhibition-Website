@@ -13,7 +13,7 @@ import youtube from "@/public/reseaux socios/youtube.png"
 import interrogation from "@/public/reseaux socios/interrogation.png"
 import facebook from "@/public/reseaux socios/facebook.png"
 
-export default function Footer({setPage})
+export default function Footer()
 {
     return <footer className={styles.footer}>
         <div className="footer-container"> 
@@ -32,11 +32,11 @@ export default function Footer({setPage})
                     </div>
                     <div>
                         <h4>Pages</h4>
-                        <p><a href="#" onClick={() => setPage('Home')}>Home</a></p>
-                        <p><a href="#" onClick={() => setPage('About')}>About</a></p>
-                        <p><a href="#" onClick={() => setPage('Cars')}>Cars</a></p>
-                        <p><a href="#" onClick={() => setPage('Pricing')}>Pricing</a></p>
-                        <p><a href="#" onClick={() => setPage('Contact')}>Contact</a></p>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="#">About</a></p>
+                        <p><a href="#">Cars</a></p>
+                        <p><a href="#">Pricing</a></p>
+                        <p><a href="#">Contact</a></p>
                     </div>
                 </div>
                 <div className="container d-flex justify-content-around">
