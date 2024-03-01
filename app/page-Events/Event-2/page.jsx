@@ -1,8 +1,10 @@
 'use client'
 
+import Link from 'next/link'
+
 import styles from "@/components/css/HomeSection2.module.css";
 
-export default function Home2 ({setPageHome})
+export default function Home2 ()
 {
     return <div className={styles.home2}>
         <div className={styles.w50}>
@@ -11,8 +13,8 @@ export default function Home2 ({setPageHome})
         <p>""la plus grande vente aux enchères de véhicules jamais au Canada, venez découvrir une sélection exceptionnelle de véhicules anciens 
             et modernes. Rejoignez-nous pour une expérience automobile unique. Réservez vos dates dès maintenant !""
         </p>
-        <p className={styles.date}><span className={styles.date}>10 - 25 Septembre 2024 | Ottawa(ontario), Canada</span></p>  
-        <button onClick={() => setPageHome('Home1')}>PRECEDENTE</button>
+        <p className={styles.date}><span className={styles.date}>15 - 25 October 2024 | Montreal(Quebec), Canada</span></p>  
+        <Link href="/page-Events/Event-1"><button >Previous Event</button></Link>
         </div>
     </div>
 }

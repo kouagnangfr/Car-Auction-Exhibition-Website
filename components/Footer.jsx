@@ -1,5 +1,8 @@
 'use client'
 
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
 import styles from "./css/Footer.module.css"
 
 import Image from "next/image"
@@ -13,8 +16,10 @@ import youtube from "@/public/reseaux socios/youtube.png"
 import interrogation from "@/public/reseaux socios/interrogation.png"
 import facebook from "@/public/reseaux socios/facebook.png"
 
-export default function Footer({setPage})
+export default function Footer()
 {
+    const pathname = usePathname();
+
     return <footer className={styles.footer}>
         <div className="footer-container"> 
             <div className={styles.mainDiv + " " + "container d-flex justify-content-between"}>
@@ -32,27 +37,47 @@ export default function Footer({setPage})
                     </div>
                     <div>
                         <h4>Pages</h4>
-                        <p><a href="#" onClick={() => setPage('Home')}>Home</a></p>
-                        <p><a href="#" onClick={() => setPage('About')}>About</a></p>
-                        <p><a href="#" onClick={() => setPage('Cars')}>Cars</a></p>
-                        <p><a href="#" onClick={() => setPage('Pricing')}>Pricing</a></p>
-                        <p><a href="#" onClick={() => setPage('Contact')}>Contact</a></p>
+                        <p>
+                            <Link href="/" className={pathname === '/' ? styles.active : ''}>
+                                Home
+                            </Link>
+                        </p>
+                        <p>
+                            <Link href="/page-Events/Event-1" className={pathname === '/page-Events/Event-1' || pathname === '/page-Events/Event-2' ? styles.active : ''}>
+                                Events
+                            </Link>
+                        </p>
+                        <p>
+                            <Link href="/page-Cars" className={pathname === '/page-Cars' ? styles.active : ''}>
+                                Cars
+                            </Link>
+                        </p>
+                        <p>
+                            <Link href="/page-Pricing" className={pathname === '/page-Pricing' ? styles.active : ''}>
+                                Pricing
+                            </Link>
+                        </p>
+                        <p>
+                            <Link href="/page-Contact" className={pathname === '/page-Contact' ? styles.active : ''}>
+                                Contacts
+                            </Link>
+                        </p>
                     </div>
                 </div>
                 <div className="container d-flex justify-content-around">
                     <div >
                         <h4>Legal</h4>
-                        <p><a href="#">Privacy</a></p>
-                        <p><a href="#">Sales Policy</a></p>
-                        <p><a href="#">Terms & Condition</a></p>
-                        <p><a href="#">Cookie Policy</a></p>
+                        <p><Link href="#">Privacy</Link></p>
+                        <p><Link href="#">Sales Policy</Link></p>
+                        <p><Link href="#">Terms & Condition</Link></p>
+                        <p><Link href="#">Cookie Policy</Link></p>
                     </div>
                     <div>
                         <h4>Contacts US</h4>
                         <p><Image src={maps} alt="Logo maps" />Ottawa, Toronto, LasVegas</p>
                         <p><Image src={telephone} alt="Logo telephone" /> +1 (000) 000 0000</p>
                         <p><a href="mailto:CarsAuctions@gmail.com"><Image src={gmail} alt="Logo Gmail" />CarsAuctions@gmail.com</a></p>
-                        <p><a href="#"><Image src={interrogation} alt="interrogation" />Faq</a></p>
+                        <p><Link href="#"><Image src={interrogation} alt="interrogation" />Faq</Link></p>
                     </div>  
                 </div>                
             </div>

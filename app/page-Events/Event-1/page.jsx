@@ -1,9 +1,11 @@
 'use client'
 
+import Link from 'next/link'
+
 import { useState, useEffect } from 'react';
 import styles from "@/components/css/HomeSection1.module.css";
 
-export default function Home1({setPageHome}) 
+export default function Home1() 
 {
     const [decompte, setDecompte] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     useEffect(() => 
@@ -40,7 +42,7 @@ export default function Home1({setPageHome})
                     <span className={styles.secondes}><p>secondes</p>{decompte.seconds}</span>
                 </div>
                 <div className={styles.menubutton}>
-                    <a href="#" className={styles.homeButton} onClick={() => setPageHome('Home2')}>SUIVANTE</a>
+                    <Link href="/page-Events/Event-2" className={styles.homeButton}>Next Event</Link>
                 </div>
             </div>
         </section>

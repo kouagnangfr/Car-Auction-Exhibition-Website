@@ -111,6 +111,11 @@
     font-size: 1.3em
 }
 
+.footer .active
+{
+    color: red;
+}
+
 /*Media Query*/
 @media screen and (max-width: 1150px)
 {
