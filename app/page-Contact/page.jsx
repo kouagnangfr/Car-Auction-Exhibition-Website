@@ -84,7 +84,6 @@ export default function Contact() {
         return true;
     };
     
-    
     //Soumission du formulaire
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -106,7 +105,7 @@ export default function Contact() {
                 message: ''
             });
         } else {
-            console.log('Formulaire non soumis car contient des erreurs');
+            console.log('Formulaire Non Soumis : car contient plusieurs erreurs!!');
         }
     };
 

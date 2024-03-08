@@ -12,7 +12,7 @@ import { useState } from 'react';
 // Ajoute toutes les icônes solidaires à la bibliothèque
 library.add(fas);
 
-export default function Header({setPage})
+export default function Header()
 {
     //Fonction pour activer ou desactiver la barre de recherche 
     const [hidden, setHidden] = useState(true);
