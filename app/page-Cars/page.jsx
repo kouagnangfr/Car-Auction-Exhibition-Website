@@ -9,6 +9,21 @@ import carsData from '@/public/gallerie-cars.json'
 
 library.add(fas);
 
+/**
+ * @type {import("next").metadata}
+ */
+export const metadata = 
+{
+    title: 'Vehicules | CarAuction',
+    description : 'Presenttion des differents vehicules que nous disposons et qui seront vendus aux encheres',
+    openGraph:
+    {
+        title: 'Vehicules | CarAuction',
+        description : 'Presenttion des differents vehicules que nous disposons et qui seront vendus aux encheres',
+        images:['/cars/car1.jpg']
+    }
+}
+
 export default function Cars() {
     return (
         <section className={`${styles.cars} ${styles.sectionPadding} ${styles.section}`}>
