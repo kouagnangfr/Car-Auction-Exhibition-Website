@@ -7,7 +7,7 @@
     padding: 0 80px;
     min-width: 100%;
     min-height: 100vh;
-    background-image: url("/home/Background-home2.png");
+    background-image: url("/home/Background-home2.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -38,7 +38,7 @@
 
 .home2 button 
 {
-    background-image: url("/otherS/button.png");
+    background-image: url("/others/button.png");
     background-color: transparent;
     color: var(--second-color);
     border: 0;

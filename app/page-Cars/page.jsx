@@ -45,7 +45,7 @@ export default function Cars() {
                         <div key={index} className={styles.carsItem} data-category={car["data-category"]}>
                             <div className={styles.carsItemInner}>
                                 <div className={styles.carsImg}>
-                                    <Image src={car.src} alt={car.alt} width={600} height={600}/>
+                                    <Image src={car.src} alt={car.alt} width={600} height={600} loading={car.loading} priority={true}/>
                                 </div>
                                 <div className={styles.carsInfo}>
                                     <h4>{car.title}</h4>

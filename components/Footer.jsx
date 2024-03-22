@@ -29,7 +29,7 @@ export default function Footer()
                         <span className={styles.follow}>Follow us on :</span>
                         <div>
                             <Image src={pinterest} alt="Logo pinterest"/>
-                            <Image src={instagram} alt="Logo instagram" />
+                            {/*<Image src={instagram} alt="Logo instagram" />*/}
                             <Image src={twitter} alt="Logo twitter" />
                             <Image src={youtube} alt="Logo youtube" />
                             <Image src={facebook} alt="Logo facebook" />

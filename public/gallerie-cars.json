@@ -1,12 +1,12 @@
 [
-    {"src":"/cars/car1.jpg", "alt":"voiture1", "title": "Dodge challenger (sport)", "data-category":"Sport" },
-    {"src":"/cars/car2.jpg", "alt":"voiture2", "title": "Ferari (sport)", "data-category":"Sport" },
-    {"src":"/cars/car3.jpg", "alt":"voiture3", "title": "Lamborgini (sport)", "data-category":"Sport" },
-    {"src":"/cars/car4.jpeg", "alt":"voiture4", "title": "Mercedes truck (Semi-remorque)", "data-category":"Semi-remorque" },
-    {"src":"/cars/car5.jpg", "alt":"voiture5", "title": "Mercedes Benz 1939 (Antique)", "data-category":"Antique" },
-    {"src":"/cars/car6.png", "alt":"voiture6", "title": "mustang 1985 (Antique)", "data-category":"Antique"},
-    {"src":"/cars/car7.jpeg", "alt":"voiture7", "title": "Renault (Familiale)", "data-category":"Antique" },
-    {"src":"/cars/car8.png", "alt":"voiture8", "title": "Dodge Gr Caravan (Familiale)", "data-category":"Antique"},
-    {"src":"/cars/car9.png", "alt":"voiture9", "title": "Audi Q5 (Familiale-Sport)", "data-category":"Antique"},
-    {"src":"/cars/car10.jpg", "alt":"voiture10", "title": "Porche 911 (sport)", "data-category":"Other"}
+    {"src":"/cars/car1.webp", "alt":"voiture1", "title": "Dodge challenger (sport)", "data-category":"Sport", "loading":"eager", "priority":"true" },
+    {"src":"/cars/car2.webp", "alt":"voiture2", "title": "Ferari (sport)", "data-category":"Sport" },
+    {"src":"/cars/car3.webp", "alt":"voiture3", "title": "Lamborgini (sport)", "data-category":"Sport"},
+    {"src":"/cars/car4.webp", "alt":"voiture4", "title": "Mercedes truck (Semi-remorque)", "data-category":"Semi-remorque" },
+    {"src":"/cars/car5.webp", "alt":"voiture5", "title": "Mercedes Benz 1939 (Antique)", "data-category":"Antique"  },
+    {"src":"/cars/car6.webp", "alt":"voiture6", "title": "mustang 1985 (Antique)", "data-category":"Antique" },
+    {"src":"/cars/car7.webp", "alt":"voiture7", "title": "Renault (Familiale)", "data-category":"Antique" },
+    {"src":"/cars/car8.webp", "alt":"voiture8", "title": "Dodge Gr Caravan (Familiale)", "data-category":"Antique"},
+    {"src":"/cars/car9.webp", "alt":"voiture9", "title": "Audi Q5 (Familiale-Sport)", "data-category":"Antique"},
+    {"src":"/cars/car10.webp", "alt":"voiture10", "title": "Porche 911 (sport)", "data-category":"Other"}
 ]
