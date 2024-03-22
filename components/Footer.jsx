@@ -25,7 +25,7 @@ export default function Footer()
             <div className={styles.mainDiv + " " + "container d-flex justify-content-between"}>
                 <div className="container d-flex justify-content-around">
                     <div>
-                        <h3>Cars<span>Auctions</span></h3>
+                        <h2>Cars<span>Auctions</span></h2>
                         <span className={styles.follow}>Follow us on :</span>
                         <div>
                             <Image src={pinterest} alt="Logo pinterest"/>
@@ -36,7 +36,7 @@ export default function Footer()
                         </div>
                     </div>
                     <div>
-                        <h4>Pages</h4>
+                        <h3>Pages</h3>
                         <p>
                             <Link href="/" className={pathname === '/' ? styles.active : ''}>
                                 Home

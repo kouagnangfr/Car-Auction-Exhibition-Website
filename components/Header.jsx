@@ -33,7 +33,9 @@ export default function Header()
     return <header className={styles.header}>
         <div className={styles.mainContainer}>
             <div className={styles.navBar + " " + styles.container}>
-                <a href="#" onClick={toggleHam}><FontAwesomeIcon icon="bars" className={styles.icon + " " + styles.menuIcon} /></a>
+                <button aria-label="Ouvrir le menu" onClick={toggleHam} style={{ backgroundColor: '#couleurDeFond', color: '#couleurDeTexte' }}>
+                    <FontAwesomeIcon icon="bars" className={styles.icon + " " + styles.menuIcon} />
+                </button>
                 <Link href="/" className={` ${styles.logo}`} >Cars<span>Auctions</span></Link>
                 {/*Nav-list */}
                 <ul className={`${styles.navbarList} ${hambuger ? styles.affichageNav : ''}`}>

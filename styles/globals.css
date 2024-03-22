@@ -1,19 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
 @font-face
 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400; 
   src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+  font-display: swap;
 }
 
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 900;
-  src: url('https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLPTucg.woff2') format('woff2');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
 
 html
 {
