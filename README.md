@@ -1,3 +1,7 @@
+An e-commerce platform for restaurants with features for online ordering and payment processing. Built with Node.js and SQLite for efficient database management.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
