@@ -1,4 +1,4 @@
-An e-commerce platform for restaurants with features for online ordering and payment processing. Built with Node.js and SQLite for efficient database management.
+A web platform for car auctions and exhibitions. It allows users to browse available cars, place bids, and track auction status. Developed using Express and Bootstrap for responsive design.
 
 
 
